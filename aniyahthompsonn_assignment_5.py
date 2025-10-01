@@ -35,3 +35,19 @@ for i in range (2, input_num):
 
 if is_prime:
     print (f"{input_num} is prime!\n")
+
+
+# CHALLENGE 3
+print ("=== Challenge 3: Multiplication Table ===")
+print ("Multiplication Table:")
+
+print ("   ", end="")
+for row in range (1, 11):
+    print (f"{row:>4}", end="")
+print ()
+
+for row in range(1, 11):
+    print (f"{row:>2} ", end="")
+    for col in range(1, 11):
+        print (f"{row * col:>4}", end="")
+    print()
